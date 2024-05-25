@@ -25,9 +25,3 @@ Seurat allows you to easily explore QC metrics and filter cells based on any use
     * We use the set of all genes starting with `MT-` as a set of mitochondrial genes.
 * The number of unique genes and total molecules are automatically calculated during `CreateSeuratObject()`.
     * You can find them stored in the object meta data.
-
-<img src="https://github.com/anshul-2010/Computational-Systems-Biology/blob/main/images/display/Actor_Critic.png" alt="Actor Critic model" width="350"/>
-
-
-
-<img src="https://github.com/anshul-2010/Computational-Systems-Biology/blob/main/images/display/RL-dFBA.png" alt="RL-dFBA working" width="500"/>
