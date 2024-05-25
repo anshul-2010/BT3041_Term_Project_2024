@@ -1,4 +1,4 @@
-# OSF Single-Cell RNA-Sequencing Analysis
+# A Multimodal Approach: Integrating scRNA-seq Analysis with Supervised Learning for OSF Biomarker Classification
 
 This repository provides a comprehensive analysis of single-cell RNA-sequencing (scRNA-seq) data from Oral Submucous Fibrosis (OSF) tissue samples. The project delves into the cellular heterogeneity of OSF, aiming to:
 
