@@ -100,15 +100,15 @@ cluster7_markers <- all_markers[["cluster7.markers"]]
 cluster8_markers <- all_markers[["cluster7.markers"]]
 
 # Take the first 5 gene expressions from the above obtained clusters of markers.
-VlnPlot(seurat_integratedatures = c("KRT8", "KRT19"))
-VlnPlot(seurat_integratedatures = c("SERPINB3", "MAL", "S100A8", "KRT1", "SBSN"))
-VlnPlot(seurat_integratedatures = c("DST", "COL17A1", "CAV1"))
-VlnPlot(seurat_integratedatures = c("ADIRF", "CLU", "DLK2"))
-VlnPlot(seurat_integratedatures = c("S100A2", "MT1G", "STMN1", "KIAA0101"))
-VlnPlot(seurat_integratedatures = c("GPX2", "AGR2", "FAM3B"))
-VlnPlot(seurat_integratedatures = c("B2M", "CD24"))
-VlnPlot(seurat_integratedatures = c("HLA-DRA", "CD74", "HLA-DPA1", "HLA-DPB1", "HLA-DRB1"))
-VlnPlot(seurat_integratedatures = c("CAV1", "TIMP2"))
+VlnPlot(seurat_integrated, features = c("KRT8", "KRT19"))
+VlnPlot(seurat_integrated, features = c("SERPINB3", "MAL", "S100A8", "KRT1", "SBSN"))
+VlnPlot(seurat_integrated, features = c("DST", "COL17A1", "CAV1"))
+VlnPlot(seurat_integrated, features = c("ADIRF", "CLU", "DLK2"))
+VlnPlot(seurat_integrated, features = c("S100A2", "MT1G", "STMN1", "KIAA0101"))
+VlnPlot(seurat_integrated, features = c("GPX2", "AGR2", "FAM3B"))
+VlnPlot(seurat_integrated, features = c("B2M", "CD24"))
+VlnPlot(seurat_integrated, features = c("HLA-DRA", "CD74", "HLA-DPA1", "HLA-DPB1", "HLA-DRB1"))
+VlnPlot(seurat_integrated, features = c("CAV1", "TIMP2"))
 # 8th was very sparse.
 
 FeaturePlot(seurat_integrated, features = c("KRT8", "SBSN", "DST", "KIAA0101", "GPX2", "B2M", "HLA-DPB1", "TIMP2"), label=TRUE, label.size=5)
