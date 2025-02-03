@@ -14,6 +14,8 @@ jpeg(file="C:\\Users\\Dell\\Desktop\\Courses\\Sem_VI\\BT3041\\Project\\All_Plots
 DimPlot(seurat_integrated, label=TRUE, split.by="sample", label.size=6) +NoLegend()
 dev.off()
 
+seurat_integrated <- JoinLayers(seurat_integrated)
+
 # Barplot of proportion of cells in each cluster by sample
 ggplot(seurat_integrated@meta.data) +
     geom_bar(aes(x=integrated_snn_res.0.2, fill=sample), position=position_fill())
@@ -74,8 +76,9 @@ group_by(cluster) %>%
 dplyr::filter(avg_log2FC > 1)
 
 markers <- list()
+all_markers <- list()
 
-for (i in 0:8) {
+for (i in 0:7) {
   # Identify markers for each cluster compared to all other cells
   markers <- FindMarkers(seurat_integrated,
                          ident.1 = i,
@@ -83,7 +86,7 @@ for (i in 0:8) {
                          test.use = "roc",        # Using Wilcoxon Rank Sum test
                          only.pos = TRUE,            # Only consider positive markers
                          min.pct = 0.5,             # Minimum fraction of cells in the cluster expressing the gene
-                         min.diff.pct = 0.3)         # Minimum difference in fraction of expressing cells between groups
+                         min.diff.pct = 0.2)         # Minimum difference in fraction of expressing cells between groups
   
   # Store the result in the list, using the cluster number as the name
   all_markers[[paste0("cluster", i, ".markers")]] <- markers
