@@ -34,3 +34,10 @@ For the third part, launch a Jupyter Notebook environment. Open the notebook and
 * `Pseudo-Bulk RNA-Seq Analysis`: Integrate pseudo-bulk RNA-seq analysis to pinpoint genes with the most significant contributions to the OSF condition.
 * `Model Optimization`: Refine the supervised learning model by optimizing hyperparameters, exploring feature engineering techniques, and incorporating additional domain knowledge to enhance its accuracy and interpretability.
 * `Clinical Applications`: Investigate the potential of the developed model for personalized medicine approaches in OSF, enabling tailored treatment strategies based on individual patient profiles.
+
+## Contributors
+A huge thanks to the team who co-created this project:
+* [Anshul Bagaria](https://github.com/anshul-2010)
+* [Sidharthan SC](https://github.com/sidharthanSC)
+* [Vansh Jain](https://github.com/)
+* [Amit John](https://github.com/amit-john)
